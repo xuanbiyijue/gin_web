@@ -1,0 +1,13 @@
+{"level":"DEBUG","time":"2022-07-05T23:13:59.534+0800","caller":"web_app/main.go:33","msg":"logger init success!"}
+{"level":"ERROR","time":"2022-07-05T23:13:59.536+0800","caller":"mysql/mysql.go:24","msg":"connect DB failed","error":"dial tcp 127.0.0.1:0: connectex: The requested address is not valid in its context."}
+{"level":"DEBUG","time":"2022-07-05T23:15:24.758+0800","caller":"web_app/main.go:33","msg":"logger init success!"}
+{"level":"INFO","time":"2022-07-05T23:16:12.701+0800","caller":"logger/logger.go:70","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36 Edg/103.0.1264.44","errors":"","cost":0.0004662}
+{"level":"INFO","time":"2022-07-05T23:16:12.900+0800","caller":"logger/logger.go:70","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36 Edg/103.0.1264.44","errors":"","cost":0}
+{"level":"INFO","time":"2022-07-05T23:18:02.887+0800","caller":"logger/logger.go:70","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36 Edg/103.0.1264.44","errors":"","cost":0.0021168}
+{"level":"INFO","time":"2022-07-05T23:18:04.411+0800","caller":"logger/logger.go:70","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36 Edg/103.0.1264.44","errors":"","cost":0}
+{"level":"INFO","time":"2022-07-06T09:23:45.550+0800","caller":"web_app/main.go:69","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-07-06T09:23:45.556+0800","caller":"web_app/main.go:78","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-07-07T13:00:22.859+0800","caller":"web_app/main.go:34","msg":"logger init success!"}
+{"level":"INFO","time":"2022-07-07T13:00:57.332+0800","caller":"logger/logger.go:73","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36 Edg/103.0.1264.44","errors":"","cost":0}
+{"level":"INFO","time":"2022-07-07T13:01:34.424+0800","caller":"web_app/main.go:74","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-07-07T13:01:34.439+0800","caller":"web_app/main.go:83","msg":"Server exiting"}
