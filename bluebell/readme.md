@@ -475,13 +475,31 @@ gin框架使用https://github.com/go-playground/validator 进行参数校验，
 
 另外对于还需要对每一个帖子创建一个zset，用来存储有哪些用户对他投过票
 
-# 压测与pprof性能分析
-压测参考: https://www.liwenzhou.com/posts/Go/benchmark-tools/   
-pprof参考: 
-
-
 # 限流
 https://www.liwenzhou.com/posts/Go/ratelimit/#autoid-0-2-1
 https://www.liwenzhou.com/posts/Go/pprof/
+
+# 压测与pprof性能分析
+压测参考: https://www.liwenzhou.com/posts/Go/benchmark-tools/   
+pprof 性能优化参考: https://www.liwenzhou.com/posts/Go/pprof/
+
+Go语言项目中的性能优化主要有以下几个方面：
+* CPU profile：报告程序的 CPU 使用情况，按照一定频率去采集应用程序在 CPU 和寄存器上面的数据
+* Memory Profile（Heap Profile）：报告程序的内存使用情况
+* Goroutine Profiling：报告 goroutines 的使用情况，有哪些 goroutine，它们的调用关系是怎样的
+* Block Profiling：报告 goroutines 不在运行状态的情况，可以用来分析和查找死锁等性能瓶颈
+
+在 Gin 框架下可以使用第三方库，github.com/gin-contrib/pprof，在代码中通过以下命令注册pprof相关路由。  
+```go
+pprof.Register(router)
+```
+
+使用相应的pprof库获取数据之后，下一步的都要对这些数据进行分析，我们可以使用go tool pprof命令行工具。
+```
+go tool pprof http://127.0.0.1:8084/debug/pprof/profile
+```
+
+通常压测和pprof搭配使用。
+
 
 # 项目部署
